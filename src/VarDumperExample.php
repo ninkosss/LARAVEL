@@ -16,46 +16,27 @@ class VarDumperExample
         echo "<h2>Приклад використання Symfony VarDumper</h2>";
 
         // Простий масив
-        $array = ['apple', 'banana', 'cherry'];
+        $array = ['window', 'linux', 'mac ios'];
         echo "<h3>Простий масив:</h3>";
         dump($array);
 
         // Асоціативний масив
         $assocArray = [
-            'name' => 'John',
-            'age' => 30,
-            'city' => 'Kyiv'
+            'name' => 'Inna',
+            'age' => 18,
+            'city' => 'Kropivnitsky'
         ];
         echo "<h3>Асоціативний масив:</h3>";
         dump($assocArray);
 
         // Об'єкт
         $object = (object) [
-            'title' => 'Програміст',
-            'salary' => 50000,
-            'skills' => ['PHP', 'JavaScript', 'SQL']
+            'title' => 'Студентка',
+            'salary' => 0,
+            'skills' => ['Python', 'C++', 'JavaScript']
         ];
         echo "<h3>Об'єкт:</h3>";
         dump($object);
 
-        // Багаторівневий масив
-        $nestedArray = [
-            'users' => [
-                ['id' => 1, 'name' => 'Alice'],
-                ['id' => 2, 'name' => 'Bob']
-            ],
-            'settings' => [
-                'theme' => 'dark',
-                'language' => 'uk'
-            ]
-        ];
-        echo "<h3>Багаторівневий масив:</h3>";
-        dump($nestedArray);
-
-        // Використання VarDumper для HTML виводу
-        echo "<h3>HTML формат (якщо підтримується):</h3>";
-        $dumper = new HtmlDumper();
-        $cloner = new VarCloner();
-        $dumper->dump($cloner->cloneVar($nestedArray));
     }
 }

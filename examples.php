@@ -13,7 +13,7 @@ use Inna\Task28\CarbonExample;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Демонстрація Composer пакетів</title>
+    <title>Composer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -56,12 +56,12 @@ use Inna\Task28\CarbonExample;
 </head>
 <body>
     <div class="container">
-        <h1>Демонстрація використання Composer пакетів</h1>
-        <p>Цей файл демонструє використання трьох популярних PHP пакетів: Monolog, VarDumper та Carbon.</p>
+        <h1>Composer пакетики</h1>
+        <p>Monolog, VarDumper та Carbon.</p>
 
         <div class="section monolog-section">
             <h2>1. Monolog - Логування</h2>
-            <p>Monolog - це потужна бібліотека для логування в PHP. Вона підтримує різні обробники (handlers) та формати.</p>
+            <p>Monolog - журнал подій в PHP.</p>
             <?php
             $monologExample = new MonologExample();
             $monologExample->run();
@@ -69,8 +69,8 @@ use Inna\Task28\CarbonExample;
         </div>
 
         <div class="section vardumper-section">
-            <h2>2. Symfony VarDumper - Дебагінг</h2>
-            <p>Symfony VarDumper надає зручні функції для дебагінгу та відображення структури даних.</p>
+            <h2>2. Symfony VarDumper </h2>
+            <p>Symfony VarDumper - структурка</p>
             <?php
             $varDumperExample = new VarDumperExample();
             $varDumperExample->run();
@@ -78,8 +78,8 @@ use Inna\Task28\CarbonExample;
         </div>
 
         <div class="section carbon-section">
-            <h2>3. Carbon - Робота з датами</h2>
-            <p>Carbon - це розширення PHP DateTime, яке робить роботу з датами та часом набагато зручнішою.</p>
+            <h2>3. Carbon</h2>
+            <p>Carbon -  DateTime</p>
             <?php
             $carbonExample = new CarbonExample();
             $carbonExample->run();
